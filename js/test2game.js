@@ -47,7 +47,8 @@ document.addEventListener("mousemove", () => {
 });
 
 
-window.URLSERV_WORMRİSE = "https://wormrise.github.io/extension";
+var SITE_XTHOST = "https://foghunter06.github.io/ozel/";
+window.URLSERV_WORMRİSE = "https://foghunter06.github.io/ozel";
 window.detectLog = null;
 const _trgworm = {
   BETAisSkinCustom(p) {
@@ -7818,7 +7819,7 @@ window.addEventListener("load", function () {
           let vF102 = f10(this.nl.name);
           if (this.nl.img) {
             var v652 = '<img src="';
-            v652 = v652 + URLSERV_WORMRİSE + "/images/paths/" + this.nl.img;
+            v652 = v652 + SITE_XTHOST + "/images/paths/" + this.nl.img;
             vF102 = v652 = v652 + '" height="43" width="220" />';
           }
           return vF102;

@@ -7114,15 +7114,15 @@ to{
 }
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-middle {
   position:absolute;
-  height:100%;
+  height: 95%;
   width:320px;
-  left:308px;
+  left: 314px;
 }
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-middle #mm-menu-cont {
   position:absolute;
   height: 56%;
   width:100%;
-  margin-top: -49px;
+  /* margin-top: -49px; */
 }
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-middle #mm-menu-cont .mm-logo {
   width:100%;
@@ -7472,9 +7472,9 @@ to{
   border-radius:8px;
 }
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-right {
-  /* position:absolute; */
-  /* height:100%; */
-  /* width: 269px; */
+  position:absolute;
+  height: 98%;
+  width: 251px;
   right:30px;
   /* box-shadow: 0 0 50px #005fff; */
   /* border: solid #ffffff; */
@@ -7513,10 +7513,10 @@ to{
     background-image: linear-gradient(#d4ecff, #000302);
 }
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-right #loa831pibur0w4gv {
-  height:340px;
+  height: 302px;
   margin:30px 0;
   background:rgba(0,0,0,.25);
-  border-radius:5px;
+  border-radius: -19px;
   overflow:hidden;
 }
 #game-wrap #game-cont #stretch-box #main-menu-view #mm-line-center .column-right #loa831pibur0w4gv .label {
