@@ -490,9 +490,9 @@ ctx.value_server = new PIXI.Text("WRE", ctx.fontStyle.name);
 ctx.value_server.x = 17;
 ctx.value_server.y = 3;
 ctx.label_hs = new PIXI.Text("HS", ctx.fontStyle.amarelo);
-ctx.value1_hs = new PIXI.Text("0", ctx.fontStyle.amarelo);
+ctx.value1_hs = new PIXI.Text(" 0", ctx.fontStyle.amarelo);
 ctx.label_kill = new PIXI.Text("KILL", ctx.fontStyle.branco);
-ctx.value1_kill = new PIXI.Text("0", ctx.fontStyle.branco);
+ctx.value1_kill = new PIXI.Text(" 0", ctx.fontStyle.branco);
 if (theoKzObjects.ModeStremersaveheadshot) {
   ctx.value2_hs = new PIXI.Text("", ctx.fontStyle.amarelo);
   ctx.value2_kill = new PIXI.Text("", ctx.fontStyle.branco);
