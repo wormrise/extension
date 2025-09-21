@@ -486,7 +486,7 @@ window.addEventListener("resize", () => {
   app.renderer.resize(window.innerWidth, window.innerHeight);
   updateSpritePositions();
 });
-ctx.value_server = new PIXI.Text("TR-W", ctx.fontStyle.name);
+ctx.value_server = new PIXI.Text("WRE", ctx.fontStyle.name);
 ctx.value_server.x = 17;
 ctx.value_server.y = 3;
 ctx.label_hs = new PIXI.Text("HS", ctx.fontStyle.amarelo);
