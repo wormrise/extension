@@ -710,7 +710,7 @@ async function extractTopScores() {
 let serverData = [];
 async function loadServersWormWorld() {
   const _0x83a874 = Date.now();
-  const _0x37daef = "https://wormrise.github.io/extension/w2/api/servers.php" + _0x83a874;
+  const _0x37daef = "https://wormrise.github.io/extension/w2/api/servers.json?v=" + _0x83a874;
   try {
     const _0x40f4a2 = await fetch(_0x37daef);
     const _0x194773 = await _0x40f4a2.json();
