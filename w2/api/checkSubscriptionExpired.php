@@ -1,0 +1,1 @@
+{"id":2,"message":"The player is not registered"}
