@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WormRise Plugin - Under Construction</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background: #0a0a0a;
+      color: #00ff00;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 50px;
+      color: #ff6f00;
+      text-shadow: 0 0 10px #ff6f00, 0 0 20px #ff6f00, 0 0 30px #ff6f00;
+    }
+
+    p {
+      font-size: 1.3em;
+      margin: 20px;
+    }
+
+    .timer {
+      font-size: 2em;
+      color: #00ff00;
+      margin-top: 20px;
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      font-size: 1.1em;
+    }
+
+    .contact-info a {
+      color: #00bfff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Background animation for code-like effect */
+    .code-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/code.png');
+      z-index: -1;
+      opacity: 0.2;
+      animation: scroll 10s linear infinite;
+    }
+
+    /* Animation to make it look like scrolling code */
+    @keyframes scroll {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 100%; }
+    }
+
+    /* Matrix effect */
+    .matrix {
+      font-size: 12px;
+      color: rgba(0, 255, 0, 0.6);
+      line-height: 1.5;
+      white-space: nowrap;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -2;
+      pointer-events: none;
+      animation: matrix 3s linear infinite;
+    }
+
+    @keyframes matrix {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Elements -->
+  <div class="matrix"></div>
+  <div class="code-background"></div>
+
+  <!-- Main Content -->
+  <h1>WormRise Plugin - Under Construction!</h1>
+  <p>We are currently working on the WormRise plugin. We'll be here soon!</p>
+  <p>نحن نعمل حاليا على إضافة WormRise. سنكون هنا قريبا!</p>
+  <p>Şu anda WormRise eklentisini geliştiriyoruz. Çok yakında buradayız!</p>
+
+  <div class="timer">
+    <p>Start date: <span id="countdown"></span></p>
+    <p>تاريخ البدء: <span id="countdown-ar"></span></p>
+    <p>Başlangıç tarihi: <span id="countdown-tr"></span></p>
+  </div>
+
+  <div class="contact-info">
+    <p>Follow us:</p>
+    <a href="https://twitter.com" target="_blank">Twitter</a> |
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="mailto:wormrisee@gmail.com">Email</a>
+    <p>تابعونا:</p>
+    <a href="https://twitter.com" target="_blank">تويتر</a> |
+    <a href="https://facebook.com" target="_blank">فيسبوك</a> |
+    <a href="mailto:wormrisee@gmail.com">البريد الإلكتروني</a>
+    <p>Bizi takip edin:</p>
+    <a href="https://twitter.com" target="_blank">Twitter</a> |
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="mailto:wormrisee@gmail.com">E-posta</a>
+  </div>
+
+  <script>
+    // Countdown timer
+    var countDownDate = new Date("September 30, 2025 00:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      document.getElementById("countdown-ar").innerHTML = days + "ي " + hours + "س " + minutes + "د " + seconds + "ث ";
+      document.getElementById("countdown-tr").innerHTML = days + "g " + hours + "s " + minutes + "d " + seconds + "s ";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Started!";
+        document.getElementById("countdown-ar").innerHTML = "بدأ!";
+        document.getElementById("countdown-tr").innerHTML = "Başladı!";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
