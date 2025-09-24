@@ -1,4 +1,4 @@
-    var GoogleAuth;
+var GoogleAuth;
 var zE;
 
 
@@ -133,19 +133,19 @@ window.sectorSystem = {
       this.state.graphics.lineTo(0, radius);
     }
     [{
-      n: "TR 1",
+      n: "UP 1",
       x: 1,
       y: -1
     }, {
-      n: "TR 2",
+      n: "UP 2",
       x: -1,
       y: -1
     }, {
-      n: "TR 3",
+      n: "UP 3",
       x: -1,
       y: 1
     }, {
-      n: "TR 4",
+      n: "UP 4",
       x: 1,
       y: 1
     }].forEach(q => {
@@ -379,8 +379,6 @@ window.sectorSystem = {
     updateUI();
   }
 };
-
-
 function _typeof(app) {
   return (_typeof = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function (app) {
     return typeof app;
@@ -11582,33 +11580,6 @@ if (app.keyCode === 77) { // مفتاح M
           return config.init.apply(this, arguments);
         }
       };
-              window.nombres2 = v359;
-        $(".Worm_cerca").text(" : " + v357.Mb.ad);
-        if (v357.Mb.ad) {
-          setTimeout(function () {
-            $(".pwrups").fadeOut();
-          }, 3000);
-        } else {
-        }
-        var v361 = this.qg(p329, p330);
-        p330 += this.rg(v361);
-        if (v357) {
-          v357.Ig(v358);
-          v357.Lg(function () {
-            return vThis6.Jg(p329.mc(p330++), p329.mc(p330++), p329.mc(p330++));
-          }, v361);
-          v357.Mg(true);
-          var v362 = this.o.N.Gf();
-          var v363 = v357.Gf();
-          var v364 = Math.max(
-            0,
-            1 - Math.hypot(v362.x - v363.x, v362.y - v363.y) / (this.o.jb * 0.5)
-          );
-          f6().r.Xd(v364, v356);
-        } else {
-          p330 += v361 * 6;
-        }
-        return p330;
       var config = {};
       var decoder = {
         data: [],
@@ -11855,6 +11826,108 @@ if (app.keyCode === 77) { // مفتاح M
         }).catch(function (app) {});
       });
     };
+    // === CSS ===
+const style = document.createElement("style");
+style.textContent = `
+  #op_tmw, #btn_crsw, #btn_copy { padding:6px 12px; border:none; border-radius:6px; cursor:pointer; }
+  #op_tmw { background:#4f46e5; color:#fff; }
+  .modal { display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.6); }
+  .modal-content { background:#1e293b; margin:8% auto; padding:20px; border-radius:10px; width:600px; color:#e2e8f0; }
+  .close { color:#fff; float:right; font-size:24px; cursor:pointer; }
+  label { display:inline-block; min-width:120px; }
+  input, select { padding:4px; border-radius:4px; border:1px solid #475569; background:#0f1724; color:#e2e8f0; }
+  .center { display:flex; justify-content:space-between; align-items:center; }
+  .setting-item { margin-top:8px; }
+`;
+document.head.appendChild(style);
+
+// === Butonlar ===
+const btnCrsw = document.createElement("button");
+btnCrsw.id = "btn_crsw";
+btnCrsw.style.display = "none";
+btnCrsw.textContent = validateParameter.ccg[34]; // dinamik içerik
+document.body.appendChild(btnCrsw);
+
+const btnOpen = document.createElement("button");
+btnOpen.id = "op_tmw";
+btnOpen.textContent = validateParameter.ccg[6];
+document.body.appendChild(btnOpen);
+
+// === Modal ===
+const modal = document.createElement("div");
+modal.id = "modal_tmw";
+modal.className = "modal";
+document.body.appendChild(modal);
+
+const modalContent = document.createElement("div");
+modalContent.className = "modal-content";
+modal.appendChild(modalContent);
+
+// Header
+const header = document.createElement("div");
+header.className = "center";
+modalContent.appendChild(header);
+
+const spanClose = document.createElement("span");
+spanClose.className = "close";
+spanClose.textContent = "×";
+header.appendChild(spanClose);
+
+const h2 = document.createElement("h2");
+h2.className = "modal-title";
+h2.textContent = validateParameter.ccg[6];
+header.appendChild(h2);
+
+// Body
+const body = document.createElement("div");
+body.id = "modal_tmw_body";
+body.className = "modal-body";
+modalContent.appendChild(body);
+
+// Kullanıcı ID
+const divUser = document.createElement("div");
+const lblUser = document.createElement("label");
+lblUser.setAttribute("for","id_customer");
+lblUser.textContent = validateParameter.ccg[7];
+const inputUser = document.createElement("input");
+inputUser.id = "id_customer";
+inputUser.type = "text";
+inputUser.value = app.userId;
+inputUser.readOnly = true;
+inputUser.style.width = "185px";
+
+const btnCopy = document.createElement("button");
+btnCopy.id = "btn_copy";
+btnCopy.innerHTML = `<span class="tooltiptext" id="myTooltip">${validateParameter.ccg[8]}</span>${validateParameter.ccg[9]}`;
+
+divUser.append(lblUser, inputUser, btnCopy);
+body.appendChild(divUser);
+
+// Sunucu seçimi
+const divServer = document.createElement("div");
+divServer.id = "div_server";
+const lblServer = document.createElement("label");
+lblServer.setAttribute("for","sel_server");
+lblServer.textContent = validateParameter.ccg[10];
+const selCountry = document.createElement("select");
+selCountry.id = "sel_country";
+divServer.append(lblServer, selCountry);
+body.appendChild(divServer);
+
+// Diğer alanlar (div_crsw, div_save, div_sound, div_speed, div_zigzag, div_w1, div_top, div_arab, div_sm, div_background, config_mobile)
+// Bunları da benzer şekilde document.createElement ile oluşturabilir ve body.appendChild ile ekleyebilirsin
+
+// === Açma/Kapama davranışları ===
+btnOpen.onclicsk = () => modal.style.display = "block";
+spanClose.onclick = () => modal.style.display = "none";
+window.onclick = e => { if(e.target===modal) modal.style.display="none"; };
+
+// Kopyala butonu
+btnCopy.onclick = () => {
+  navigator.clipboard.writeText(inputUser.value);
+  alert("Kullanıcı ID kopyalandı: " + inputUser.value);
+};
+
     ooo.pDc = function (app) {
       var config = {};
       (function (app, config) {
@@ -11875,4 +11948,3 @@ if (app.keyCode === 77) { // مفتاح M
     };
   });
 })();
-
