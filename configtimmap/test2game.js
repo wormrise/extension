@@ -133,19 +133,19 @@ window.sectorSystem = {
       this.state.graphics.lineTo(0, radius);
     }
     [{
-      n: "TR 1",
+      n: "UP 1",
       x: 1,
       y: -1
     }, {
-      n: "TR 2",
+      n: "UP 2",
       x: -1,
       y: -1
     }, {
-      n: "TR 3",
+      n: "UP 3",
       x: -1,
       y: 1
     }, {
-      n: "TR 4",
+      n: "UP 4",
       x: 1,
       y: 1
     }].forEach(q => {
@@ -899,9 +899,6 @@ function _typeof(app) {
       $("#port_id").val("");
       $("#port_name").val("");
     });
-    $(".mm-logo").attr("src", "https://i.imgur.com/EgFYOyI.png");
-      $(".loading-logo").attr("src", "https://i.imgur.com/EgFYOyI.png");
-      $('.mm-logo').attr("src", "https://i.imgur.com/EgFYOyI.png");
     var mapSprite = null;
     var _0x4d0ax21 = null;
     var _0x4d0ax22 = false;
