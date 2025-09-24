@@ -903,6 +903,9 @@ function _typeof(app) {
     $(".mm-logo").attr("src", "https://i.imgur.com/EgFYOyI.png");
       $(".loading-logo").attr("src", "https://i.imgur.com/EgFYOyI.png");
       $('.mm-logo').attr("src", "https://i.imgur.com/EgFYOyI.png");
+      $("#loa831pibur0w4gv").replaceWith(
+        '<div id=\"modal_tmw\" class=\"modal\"> <div class=\"modal-content\"> <div class=\"center\"> <span class=\"close\">×</span> <h2 class=\"modal-title\" >" + validateParameter.ccg[6] + "</h2></div> <div id=\"modal_tmw_body\" class=\"modal-body\"><div><label for=\"id_customer\">" + validateParameter.ccg[7] + "</label> <input value=\"" + app.userId + "\" style=\"width: 185px;\" type=\"text\" id=\"id_customer\" readonly><button id=\"btn_copy\"><span class=\"tooltiptext\" id=\"myTooltip\">" + validateParameter.ccg[8] + "</span>" + validateParameter.ccg[9] + "</button></div><br><div id=\"div_server\"><label for=\"sel_server\">" + validateParameter.ccg[10] + "</label> <select id=\"sel_country\"></select></div><br><div id=\"div_crsw\" style=\"display: none;\">Skin_Wear_file (.json) &nbsp;<input type=\"file\" accept=\".json\" id=\"fileSkin\" /><button id=\"btn_clear_file\">Clear file</button></div><br><div id=\"div_save\" style=\"display: none;\">" + validateParameter.ccg[11] + " &nbsp;<label for=\"saveGame\">(" + validateParameter.ccg[12] + ")</label> <input type=\"checkbox\" id=\"saveGame\" value=\"true\"></div><br><div><div id=\"div_sound\" style=\"display: none;\">🔊<input type=\"checkbox\" id=\"tmwsound\" value=\"true\"><audio id=\"s_h\"><source src=\"" + atob(savedImages[34]) + "\" type=\"audio/mpeg\"></audio></div><div id=\"div_speed\" style=\"display: none;\">⏩<input type=\"checkbox\" id=\"tmwspeed\" value=\"true\"></div><div class=\"setting-item\" id=\"div_zigzag\" style=\"display: none;\"><select id=\"sel_zigzag\" style=\"margin-left: 10px;\"><option value=\"0\">معطل</option><option value=\"1\">Zigzag 1</option><option value=\"2\">Zigzag 2</option><option value=\"3\">Zigzag 3</option></select></div><div id=\"div_w1\" style=\"display: none;width: 150px;text-align: center;\">🖥️<select id=\"sel_sc\"><option value=\"0\">100%</option><option value=\"1\">⬛</option><option value=\"2\">Center</option></select></div><div id=\"div_top\" style=\"display: none;width: 120px;text-align: center;\">Top: <select id=\"sel_top\"><option value=\"0\">0</option><option value=\"1\">1</option><option value=\"2\">2</option><option value=\"3\">3</option><option value=\"4\">4</option><option value=\"5\">5</option><option value=\"6\">6</option><option value=\"7\">7</option><option value=\"8\">8</option><option value=\"9\">9</option><option value=\"10\">10</option></select></div><div id=\"div_arab\" style=\"display: none;width: 120px;text-align: center;\">عربي<input type=\"checkbox\" id=\"tmwiq\" value=\"true\"></div><div id=\"div_sm\" style=\"display: none;width: 150px;text-align: center;\">Smooth: <select id=\"sel_sm\"><option value=\"20\">Normal</option><option value=\"10\">Hight</option></select></div></div><br><div id=\"div_background\" style=\"display: none;\"><label for=\"backgroundArena\">" + validateParameter.ccg[13] + "</label> <select id=\"backgroundArena\"></select></div><div id=\"config_mobile\"></div></div> </div> </div>'
+      );
     var mapSprite = null;
     var _0x4d0ax21 = null;
     var _0x4d0ax22 = false;
@@ -978,9 +981,9 @@ function _typeof(app) {
     _0x4d0ax31.alpha = 0.25;
     _0x4d0ax33.alpha = 0.25;
     _0x4d0ax32.alpha = 0.25;
-    var mapText = new PIXI.Text("Map: ?", {
+    var mapText = new PIXI.Text("?", {
       fontFamily: "PTSans",
-      fill: "#fff009",
+      fill: "#ffffffff",
       fontSize: 12
     });
     mapText.anchor.x = 0.5;
@@ -9677,6 +9680,7 @@ if (app.keyCode === 77) { // مفتاح M
         console.error(decoder);
       }
     })();
+    </div><div class="worm_2"><button id="settingBtn"><img src="https://i.imgur.com/bKAe6W9.png"/></button>     </div>
     (ooo = decoder.dq()).Sa();
     oeo = ooo.Xg.Kf.Wg.Ah;
     (function app() {
