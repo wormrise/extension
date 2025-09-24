@@ -1,12 +1,4 @@
-window.onload = function () {
-  document.getElementById("progress-bar").style.width = "100%";
-  setTimeout(() => {
-    document.getElementById("loading-screen").style.opacity = '0';
-    setTimeout(() => {
-      document.getElementById("loading-screen").remove();
-    }, 0x1f4);
-  }, 0x2710);
-};
+
 function loadScript4(_0x3ab5d7, _0x20be3b, _0x5a9a31) {
   if (document.getElementById(_0x20be3b)) {
     _0x5a9a31();
