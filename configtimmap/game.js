@@ -379,6 +379,198 @@ window.sectorSystem = {
     updateUI();
   }
 };
+  let v688 = [
+      {
+        nombre: "lipstick",
+        url: "https://i.imgur.com/zNlNdlx.png",
+      },
+      {
+        nombre: "Cherries_Pointer",
+        url: "https://cdn.custom-cursor.com/db/pointer/32/Cherries_Pointer.png",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_01.cur",
+      },{
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_02.cur",
+      },{
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_03.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_04.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_05.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_06.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_07.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_08.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_09.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_10.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_11.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_12.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_13.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_14.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_15.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_16.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_17.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_18.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_19.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_20.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_21.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_22.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_23.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_24.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_25.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_26.cur",
+      },
+      {
+        nombre: "cursor",
+        url: "https://deltav4.gitlab.io/v7/assets/cursors/cursor_27.cur",
+      },
+
+    ];
+    let v689 = [
+      {
+        nombre: "Default",
+        url: "https://i.imgur.com/8ubx4RA.png",
+      },
+      {
+        nombre: "Schwarze Background",
+        url: "https://i.imgur.com/3cxXwZ6.png",
+      },
+      {
+        nombre: "light blue",
+        url: "https://i.imgur.com/dWtJFIx.png",
+      },
+      {
+        nombre: "woman",
+        url: "https://i.imgur.com/19YALRi.png",
+      },
+      {
+        nombre: "Navidad",
+        url: "https://i.imgur.com/PSRIvVM.png",
+      },
+      {
+        nombre: "Mal3ab",
+        url: "https://i.imgur.com/MlCgOma.png",
+      },
+      {
+        nombre: "Galaxy_Star",
+        url: "https://i.imgur.com/yayb9Ru.png",
+      },
+      {
+        nombre: "Desert",
+        url: "https://asserts.wormworld.io/backgrounds/bkgnd7.png",
+      },
+      {
+        nombre: "Sky 1",
+        url: "https://asserts.wormworld.io/backgrounds/bg_sky_1.png",
+      },
+      {
+        nombre: "Sky 2",
+        url: "https://asserts.wormworld.io/backgrounds/bg_sky_2.png",
+      },
+      {
+        nombre: "Sky 3",
+        url: "https://asserts.wormworld.io/backgrounds/bg_sky_3.png",
+      },
+      {
+        nombre: "Sky 4",
+        url: "https://asserts.wormworld.io/backgrounds/bg_sky_4.png",
+      },
+    ];
+    theoKzObjects.loading = true;
+    var v690 = "";
+    v690 += "</div>";
+    v690 += "</div>";
+    v690 += "</div>";
+    v690 += '<div id="wormcerca">';
+    v690 +=
+      '<img class="pwrups v0" style="display: none;" src="https://i.imgur.com/M1LFPpp.png">';
+    v690 +=
+      '<img class="pwrups v1" style="display: none;" src="https://i.imgur.com/z162iYa.png">';
+    v690 +=
+      '<img class="pwrups v2" style="display: none;" src="https://i.imgur.com/kXlF32q.png">';
+    v690 +=
+      '<img class="pwrups v3" style="display: none;" src="https://i.imgur.com/kJ6oz7e.png">';
+    v690 +=
+      '<img class="pwrups v4" style="display: none;" src="https://i.imgur.com/l3ds43O.png">';
+    v690 +=
+      '<img class="pwrups v5" style="display: none;" src="https://i.imgur.com/FqA56k6.png">';
+    v690 +=
+      '<img class="pwrups v6" style="display: none;" src="https://i.imgur.com/mSCZeEp.png">';
+    v690 += "</div>";
+    v690 +=
+      '<img class="worm_1" src="https://i.imgur.com/iekrYYm.png"><span class="Worm_cerca"></span>';
+    v690 +=
+      '</div><div class="worm_2"><button id="settingBtn"><img src="https://i.imgur.com/bKAe6W9.png"/></button><div id="settingContent"><div class="container1"><span class="settings_span">Spin-Fast: </span><input id="smoothCamera" class="range" type="range" min="0.3" max="0.6" value="\' + theoKzObjects.smoothCamera + \'" step="0.1" onmousemove="smoothCameraValue.value=value" /></div><div class="container1">\n        <span class="settings_span">Power-ups-Size: </span>\n        <input id="PortionSize" class="range" type="range" min="1" max="6" value="\' + theoKzObjects.PortionSize + \'" step="1" onmousemove="rangevalue1.value=value" />\n        </div>\n        \n      <div class="container1">\n      <span class="settings_span">Power-ups-Aura: </span>\n      <input id="PortionAura" class="range" type="range" min="1.2" max="3.2" value="\' + theoKzObjects.PortionAura + \'" step="0.2" onmousemove="PortionAuravalue.value=value" />\n      </div>\n       \n      <div class="container1">\n                    <span class="settings_span">Food-Size: </span>\n                    <input id="FoodSize" class="range" type="range" min="0.5" max="3" value="\' + theoKzObjects.FoodSize + \'" step="0.5" onmousemove="rangevalue2.value=value" />\n                    </div>\n                    <div class="container1">\n                    <span class="settings_span">Food-Shadow: </span>\n                    <input id="FoodShadow" class="range" type="range" min="0.5" max="3" value="\' + theoKzObjects.FoodShadow + \'" step="0.5" onmousemove="FoodShadowvalue.value=value" />\n                    </div>\n    </div>\n    </div><div style="display:none" id="zoom-container"><div id="zoom-out">-</div><div id="zoom-in">+</div><div class="worm_3">x.<span id="zoom-percentage"></span>';
 function _typeof(app) {
   return (_typeof = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function (app) {
     return typeof app;
@@ -11873,55 +12065,3 @@ if (app.keyCode === 77) { // مفتاح M
     };
   });
 })();
-theoKzObjects.loading = true;
-    var v690 = "";
-    v690 += "</div>";
-    v690 += "</div>";
-    v690 += "</div>";
-    v690 += '<div id="wormcerca">';
-    v690 +=
-      '<img class="pwrups v0" style="display: none;" src="https://i.imgur.com/M1LFPpp.png">';
-    v690 +=
-      '<img class="pwrups v1" style="display: none;" src="https://i.imgur.com/z162iYa.png">';
-    v690 +=
-      '<img class="pwrups v2" style="display: none;" src="https://i.imgur.com/kXlF32q.png">';
-    v690 +=
-      '<img class="pwrups v3" style="display: none;" src="https://i.imgur.com/kJ6oz7e.png">';
-    v690 +=
-      '<img class="pwrups v4" style="display: none;" src="https://i.imgur.com/l3ds43O.png">';
-    v690 +=
-      '<img class="pwrups v5" style="display: none;" src="https://i.imgur.com/FqA56k6.png">';
-    v690 +=
-      '<img class="pwrups v6" style="display: none;" src="https://i.imgur.com/mSCZeEp.png">';
-    v690 += "</div>";
-    v690 +=
-      '<img class="worm_1" src="https://i.imgur.com/iekrYYm.png"><span class="Worm_cerca"></span>';
-    v690 +=
-      '</div><div class="worm_2"><button id="settingBtn"><img src="https://i.imgur.com/bKAe6W9.png"/></button><div id="settingContent"><div class="container1"><span class="settings_span">Spin-Fast: </span><input id="smoothCamera" class="range" type="range" min="0.3" max="0.6" value="\' + theoKzObjects.smoothCamera + \'" step="0.1" onmousemove="smoothCameraValue.value=value" /></div><div class="container1">\n        <span class="settings_span">Power-ups-Size: </span>\n        <input id="PortionSize" class="range" type="range" min="1" max="6" value="\' + theoKzObjects.PortionSize + \'" step="1" onmousemove="rangevalue1.value=value" />\n        </div>\n        \n      <div class="container1">\n      <span class="settings_span">Power-ups-Aura: </span>\n      <input id="PortionAura" class="range" type="range" min="1.2" max="3.2" value="\' + theoKzObjects.PortionAura + \'" step="0.2" onmousemove="PortionAuravalue.value=value" />\n      </div>\n       \n      <div class="container1">\n                    <span class="settings_span">Food-Size: </span>\n                    <input id="FoodSize" class="range" type="range" min="0.5" max="3" value="\' + theoKzObjects.FoodSize + \'" step="0.5" onmousemove="rangevalue2.value=value" />\n                    </div>\n                    <div class="container1">\n                    <span class="settings_span">Food-Shadow: </span>\n                    <input id="FoodShadow" class="range" type="range" min="0.5" max="3" value="\' + theoKzObjects.FoodShadow + \'" step="0.5" onmousemove="FoodShadowvalue.value=value" />\n                    </div>\n    </div>\n    </div><div style="display:none" id="zoom-container"><div id="zoom-out">-</div><div id="zoom-in">+</div><div class="worm_3">x.<span id="zoom-percentage"></span>';
-              window.nombres2 = v359;
-        $(".Worm_cerca").text(" : " + v357.Mb.ad);
-        if (v357.Mb.ad) {
-          setTimeout(function () {
-            $(".pwrups").fadeOut();
-          }, 3000);
-        } else {
-        }
-        var v361 = this.qg(p329, p330);
-        p330 += this.rg(v361);
-        if (v357) {
-          v357.Ig(v358);
-          v357.Lg(function () {
-            return vThis6.Jg(p329.mc(p330++), p329.mc(p330++), p329.mc(p330++));
-          }, v361);
-          v357.Mg(true);
-          var v362 = this.o.N.Gf();
-          var v363 = v357.Gf();
-          var v364 = Math.max(
-            0,
-            1 - Math.hypot(v362.x - v363.x, v362.y - v363.y) / (this.o.jb * 0.5)
-          );
-          f6().r.Xd(v364, v356);
-        } else {
-          p330 += v361 * 6;
-        }
-        return p330;
