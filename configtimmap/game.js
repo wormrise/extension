@@ -9680,7 +9680,7 @@ if (app.keyCode === 77) { // مفتاح M
         console.error(decoder);
       }
     })();
-    </div><div class="worm_2"><button id="settingBtn"><img src="https://i.imgur.com/bKAe6W9.png"/></button>     </div>
+
     (ooo = decoder.dq()).Sa();
     oeo = ooo.Xg.Kf.Wg.Ah;
     (function app() {
