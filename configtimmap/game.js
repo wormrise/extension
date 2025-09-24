@@ -11827,18 +11827,6 @@ if (app.keyCode === 77) { // مفتاح M
       });
     };
     // === CSS ===
-const style = document.createElement("style");
-style.textContent = `
-  #op_tmw, #btn_crsw, #btn_copy { padding:6px 12px; border:none; border-radius:6px; cursor:pointer; }
-  #op_tmw { background:#4f46e5; color:#fff; }
-  .modal { display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.6); }
-  .modal-content { background:#1e293b; margin:8% auto; padding:20px; border-radius:10px; width:600px; color:#e2e8f0; }
-  .close { color:#fff; float:right; font-size:24px; cursor:pointer; }
-  label { display:inline-block; min-width:120px; }
-  input, select { padding:4px; border-radius:4px; border:1px solid #475569; background:#0f1724; color:#e2e8f0; }
-  .center { display:flex; justify-content:space-between; align-items:center; }
-  .setting-item { margin-top:8px; }
-`;
 document.head.appendChild(style);
 
 // === Butonlar ===
