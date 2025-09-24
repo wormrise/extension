@@ -9671,7 +9671,7 @@ if (app.keyCode === 77) { // مفتاح M
         let config = document.createElement("link");
         config.rel = "stylesheet";
         config.type = "text/css";
-        config.href = gameSettings.s_p + "/game.css";
+        config.href = gameSettings.s_l + "/css/tmw.css";
         app.appendChild(config);
       } catch (decoder) {
         console.error(decoder);
