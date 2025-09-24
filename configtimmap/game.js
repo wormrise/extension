@@ -3968,7 +3968,7 @@ function _typeof(app) {
           this.bi();
         }
         this.Sg[detectMobileDevice].ci(1, "white");
-        this.Sg[detectMobileDevice].di("", decoder.U("index.game.leader.top10").replace("10", gameSettings.to), `(${ooo.Mh.ei} .online)`);
+        this.Sg[detectMobileDevice].di("", decoder.U("index.game.leader.top10").replace("10", gameSettings.to), `(${ooo.Mh.ei} 🎃)`);
         this.Sg[detectMobileDevice].position.y = key;
         key += this._h;
         detectMobileDevice += 1;
