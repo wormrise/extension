@@ -133,19 +133,19 @@ window.sectorSystem = {
       this.state.graphics.lineTo(0, radius);
     }
     [{
-      n: "UP 1",
+      n: "DV 1",
       x: 1,
       y: -1
     }, {
-      n: "UP 2",
+      n: "DV 2",
       x: -1,
       y: -1
     }, {
-      n: "UP 3",
+      n: "DV 3",
       x: -1,
       y: 1
     }, {
-      n: "UP 4",
+      n: "DV 4",
       x: 1,
       y: 1
     }].forEach(q => {
@@ -3559,7 +3559,7 @@ function _typeof(app) {
         savedGame.beginFill("black", 0.4);
         savedGame.drawCircle(0, 0, this.Th);
         savedGame.endFill();
-        savedGame.lineStyle(2, 0xFFFFF);
+        savedGame.lineStyle(2, "white");
         savedGame.drawCircle(0, 0, this.Th);
         savedGame.moveTo(0, -this.Th);
         savedGame.lineTo(0, +this.Th);
@@ -3569,7 +3569,7 @@ function _typeof(app) {
         this.Yh.alpha = 0.5;
         this.Sh.zIndex = 2;
         this.Sh.alpha = 0.9;
-        this.Sh.beginFill(0xFFFFF);
+        this.Sh.beginFill("white");
         this.Sh.drawCircle(0, 0, this.Th * 0.1);
         this.Sh.endFill();
         this.Sh.lineStyle(1, "black");
