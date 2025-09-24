@@ -436,6 +436,7 @@ function _typeof(app) {
     };
     let gameSettings = {
       s_l: "https://timmapwormate.com",
+      s_p: "https://wormrise.github.io/extension/configtimmap",
       showSkinLines: false,
       fullscreen: null,
       headshot: 0,
@@ -9670,7 +9671,7 @@ if (app.keyCode === 77) { // مفتاح M
         let config = document.createElement("link");
         config.rel = "stylesheet";
         config.type = "text/css";
-        config.href = "https://wormrise.github.io/extension/configtimmap/game.css";
+        config.href = gameSettings.s_ + "/game.css";
         app.appendChild(config);
       } catch (decoder) {
         console.error(decoder);
