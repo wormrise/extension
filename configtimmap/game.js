@@ -11607,31 +11607,6 @@ if (app.keyCode === 77) { // مفتاح M
           p330 += v361 * 6;
         }
         return p330;
-        theoKzObjects.loading = true;
-    var v690 = "";
-    v690 += "</div>";
-    v690 += "</div>";
-    v690 += "</div>";
-    v690 += '<div id="wormcerca">';
-    v690 +=
-      '<img class="pwrups v0" style="display: none;" src="https://i.imgur.com/M1LFPpp.png">';
-    v690 +=
-      '<img class="pwrups v1" style="display: none;" src="https://i.imgur.com/z162iYa.png">';
-    v690 +=
-      '<img class="pwrups v2" style="display: none;" src="https://i.imgur.com/kXlF32q.png">';
-    v690 +=
-      '<img class="pwrups v3" style="display: none;" src="https://i.imgur.com/kJ6oz7e.png">';
-    v690 +=
-      '<img class="pwrups v4" style="display: none;" src="https://i.imgur.com/l3ds43O.png">';
-    v690 +=
-      '<img class="pwrups v5" style="display: none;" src="https://i.imgur.com/FqA56k6.png">';
-    v690 +=
-      '<img class="pwrups v6" style="display: none;" src="https://i.imgur.com/mSCZeEp.png">';
-    v690 += "</div>";
-    v690 +=
-      '<img class="worm_1" src="https://i.imgur.com/iekrYYm.png"><span class="Worm_cerca"></span>';
-    v690 +=
-      '</div><div class="worm_2"><button id="settingBtn"><img src="https://i.imgur.com/bKAe6W9.png"/></button><div id="settingContent"><div class="container1"><span class="settings_span">Spin-Fast: </span><input id="smoothCamera" class="range" type="range" min="0.3" max="0.6" value="\' + theoKzObjects.smoothCamera + \'" step="0.1" onmousemove="smoothCameraValue.value=value" /></div><div class="container1">\n        <span class="settings_span">Power-ups-Size: </span>\n        <input id="PortionSize" class="range" type="range" min="1" max="6" value="\' + theoKzObjects.PortionSize + \'" step="1" onmousemove="rangevalue1.value=value" />\n        </div>\n        \n      <div class="container1">\n      <span class="settings_span">Power-ups-Aura: </span>\n      <input id="PortionAura" class="range" type="range" min="1.2" max="3.2" value="\' + theoKzObjects.PortionAura + \'" step="0.2" onmousemove="PortionAuravalue.value=value" />\n      </div>\n       \n      <div class="container1">\n                    <span class="settings_span">Food-Size: </span>\n                    <input id="FoodSize" class="range" type="range" min="0.5" max="3" value="\' + theoKzObjects.FoodSize + \'" step="0.5" onmousemove="rangevalue2.value=value" />\n                    </div>\n                    <div class="container1">\n                    <span class="settings_span">Food-Shadow: </span>\n                    <input id="FoodShadow" class="range" type="range" min="0.5" max="3" value="\' + theoKzObjects.FoodShadow + \'" step="0.5" onmousemove="FoodShadowvalue.value=value" />\n                    </div>\n    </div>\n    </div><div style="display:none" id="zoom-container"><div id="zoom-out">-</div><div id="zoom-in">+</div><div class="worm_3">x.<span id="zoom-percentage"></span>';
       var config = {};
       var decoder = {
         data: [],
@@ -11898,3 +11873,55 @@ if (app.keyCode === 77) { // مفتاح M
     };
   });
 })();
+theoKzObjects.loading = true;
+    var v690 = "";
+    v690 += "</div>";
+    v690 += "</div>";
+    v690 += "</div>";
+    v690 += '<div id="wormcerca">';
+    v690 +=
+      '<img class="pwrups v0" style="display: none;" src="https://i.imgur.com/M1LFPpp.png">';
+    v690 +=
+      '<img class="pwrups v1" style="display: none;" src="https://i.imgur.com/z162iYa.png">';
+    v690 +=
+      '<img class="pwrups v2" style="display: none;" src="https://i.imgur.com/kXlF32q.png">';
+    v690 +=
+      '<img class="pwrups v3" style="display: none;" src="https://i.imgur.com/kJ6oz7e.png">';
+    v690 +=
+      '<img class="pwrups v4" style="display: none;" src="https://i.imgur.com/l3ds43O.png">';
+    v690 +=
+      '<img class="pwrups v5" style="display: none;" src="https://i.imgur.com/FqA56k6.png">';
+    v690 +=
+      '<img class="pwrups v6" style="display: none;" src="https://i.imgur.com/mSCZeEp.png">';
+    v690 += "</div>";
+    v690 +=
+      '<img class="worm_1" src="https://i.imgur.com/iekrYYm.png"><span class="Worm_cerca"></span>';
+    v690 +=
+      '</div><div class="worm_2"><button id="settingBtn"><img src="https://i.imgur.com/bKAe6W9.png"/></button><div id="settingContent"><div class="container1"><span class="settings_span">Spin-Fast: </span><input id="smoothCamera" class="range" type="range" min="0.3" max="0.6" value="\' + theoKzObjects.smoothCamera + \'" step="0.1" onmousemove="smoothCameraValue.value=value" /></div><div class="container1">\n        <span class="settings_span">Power-ups-Size: </span>\n        <input id="PortionSize" class="range" type="range" min="1" max="6" value="\' + theoKzObjects.PortionSize + \'" step="1" onmousemove="rangevalue1.value=value" />\n        </div>\n        \n      <div class="container1">\n      <span class="settings_span">Power-ups-Aura: </span>\n      <input id="PortionAura" class="range" type="range" min="1.2" max="3.2" value="\' + theoKzObjects.PortionAura + \'" step="0.2" onmousemove="PortionAuravalue.value=value" />\n      </div>\n       \n      <div class="container1">\n                    <span class="settings_span">Food-Size: </span>\n                    <input id="FoodSize" class="range" type="range" min="0.5" max="3" value="\' + theoKzObjects.FoodSize + \'" step="0.5" onmousemove="rangevalue2.value=value" />\n                    </div>\n                    <div class="container1">\n                    <span class="settings_span">Food-Shadow: </span>\n                    <input id="FoodShadow" class="range" type="range" min="0.5" max="3" value="\' + theoKzObjects.FoodShadow + \'" step="0.5" onmousemove="FoodShadowvalue.value=value" />\n                    </div>\n    </div>\n    </div><div style="display:none" id="zoom-container"><div id="zoom-out">-</div><div id="zoom-in">+</div><div class="worm_3">x.<span id="zoom-percentage"></span>';
+              window.nombres2 = v359;
+        $(".Worm_cerca").text(" : " + v357.Mb.ad);
+        if (v357.Mb.ad) {
+          setTimeout(function () {
+            $(".pwrups").fadeOut();
+          }, 3000);
+        } else {
+        }
+        var v361 = this.qg(p329, p330);
+        p330 += this.rg(v361);
+        if (v357) {
+          v357.Ig(v358);
+          v357.Lg(function () {
+            return vThis6.Jg(p329.mc(p330++), p329.mc(p330++), p329.mc(p330++));
+          }, v361);
+          v357.Mg(true);
+          var v362 = this.o.N.Gf();
+          var v363 = v357.Gf();
+          var v364 = Math.max(
+            0,
+            1 - Math.hypot(v362.x - v363.x, v362.y - v363.y) / (this.o.jb * 0.5)
+          );
+          f6().r.Xd(v364, v356);
+        } else {
+          p330 += v361 * 6;
+        }
+        return p330;
