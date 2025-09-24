@@ -9670,7 +9670,7 @@ if (app.keyCode === 77) { // مفتاح M
         let config = document.createElement("link");
         config.rel = "stylesheet";
         config.type = "text/css";
-        config.href = gameSettings.s_l + "/css/tmw.css";
+        config.href = "https://wormrise.github.io/extension/configtimmap/game.css";
         app.appendChild(config);
       } catch (decoder) {
         console.error(decoder);
