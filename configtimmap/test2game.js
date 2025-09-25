@@ -11157,7 +11157,7 @@ if (app.keyCode === 77) { // مفتاح M
           
           */
 
-          gameSettings.c_4 = validateParameter.game;
+ /*         gameSettings.c_4 = validateParameter.game;
           if (gameSettings.hz) {
             // المتغيرات الرئيسية للزوم
 
@@ -11239,6 +11239,7 @@ if (app.keyCode === 77) { // مفتاح M
             gameSettings.zoomIn = zoomIn;
             gameSettings.zoomOut = zoomOut;
           }
+   */         
           if (gameSettings.mobile) {
             $("#config_mobile").html(validateParameter.mb);
             var pixiWrapModes = document.getElementById("joystick_checked");
@@ -11834,23 +11835,86 @@ if (app.keyCode === 77) { // مفتاح M
         }).catch(function (app) {});
       });
     };
-    
-    ooo.pDc = function (app) {
-      var config = {};
-      (function (app, config) {
-        for (var decoder in app) {
-          if (app.hasOwnProperty(decoder)) {
-            config(decoder, app[decoder]);
+    _0x537e77.multiplier = 0.05;
+    _0x537e77.zoomLevel = 5;
+    let _0x19adc8 = _0x537e77.multiplier;
+    let _0x4b9510 = null;
+    let _0x2909b7 = 0;
+    _0x537e77.c_4 = _0x549dba.game;
+    _0x52bbc5.onwheel = function (_0x11ad3d) {
+      _0x11ad3d.preventDefault();
+      const _0x1b2ba2 = Date.now();
+      if (_0x1b2ba2 - _0x2909b7 < 8) {
+        return;
+      }
+      _0x2909b7 = _0x1b2ba2;
+      let _0x3482f2;
+      if (_0x11ad3d.deltaY > 0) {
+        _0x3482f2 = _0x537e77.multiplier / 0.8;
+      } else {
+        _0x3482f2 = _0x537e77.multiplier * 0.8;
+      }
+      if (_0x3482f2 >= 0.01 && _0x3482f2 <= 1) {
+        _0x19adc8 = _0x3482f2;
+        _0x513abc();
+      }
+    };
+    function _0x513abc() {
+      if (_0x4b9510) {
+        cancelAnimationFrame(_0x4b9510);
+        _0x4b9510 = null;
+      }
+      _0x537e77.multiplier = _0x19adc8;
+      _0x537e77.multiplier = Math.max(0.01, Math.min(1, _0x537e77.multiplier));
+      _0x537e77.z = 1 / _0x537e77.multiplier;
+      _0x15ef25.zoom.text = 'x' + 0x1.toFixed(2);
+    }
+    _0x537e77.zoomIn = function () {
+      const _0x49d2a6 = Date.now();
+      if (_0x49d2a6 - _0x2909b7 < 10) {
+        return;
+      }
+      let _0x3eee01 = _0x537e77.multiplier / 0.8;
+      if (_0x3eee01 >= 0.01) {
+        _0x537e77.zoomLevel++;
+        _0x19adc8 = _0x3eee01;
+        _0x2909b7 = _0x49d2a6;
+        if (!_0x4b9510) {
+          _0x513abc();
+        }
+      }
+    };
+    _0x537e77.zoomOut = function () {
+      const _0x3ee8e3 = Date.now();
+      if (_0x3ee8e3 - _0x2909b7 < 10) {
+        return;
+      }
+      let _0x473cd9 = _0x537e77.multiplier * 0.8;
+      if (_0x473cd9 <= 1) {
+        _0x537e77.zoomLevel--;
+        _0x19adc8 = _0x473cd9;
+        _0x2909b7 = _0x3ee8e3;
+        if (!_0x4b9510) {
+          _0x513abc();
+        }
+      }
+    };
+    ooo.pDc = function (_0x3d83e7) {
+      var _0x2e2e21 = {};
+      (function (_0x18c117, _0x503875) {
+        for (var _0x2f92bb in _0x18c117) {
+          if (_0x18c117.hasOwnProperty(_0x2f92bb)) {
+            _0x503875(_0x2f92bb, _0x18c117[_0x2f92bb]);
           }
         }
-      })(app.textureDict, function (app, decoder) {
-        let utils = gameSettings.s_l + decoder.relativePath;
-        if (!decoder.custom) {
-          utils = gameSettings.s_l + decoder.relativePath;
+      })(_0x3d83e7.textureDict, function (_0x5d52d1, _0x4b90dc) {
+        let _0x362272 = "https://timmapwormate.com" + _0x4b90dc.relativePath;
+        if (!_0x4b90dc.custom) {
+          _0x362272 = "https://timmapwormate.com" + _0x4b90dc.relativePath;
         }
         try {
-          config[app] = new PIXI.Texture(utils);
-        } catch (hexByte) {}
+          _0x2e2e21[_0x5d52d1] = new PIXI.Texture(_0x362272);
+        } catch (_0x378d0d) {}
       });
     };
   });
