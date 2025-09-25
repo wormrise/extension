@@ -11157,7 +11157,7 @@ if (app.keyCode === 77) { // مفتاح M
           
           */
 
-    /*        gameSettings.c_4 = validateParameter.game;
+          gameSettings.c_4 = validateParameter.game;
           if (gameSettings.hz) {
             // المتغيرات الرئيسية للزوم
 
@@ -11239,51 +11239,6 @@ if (app.keyCode === 77) { // مفتاح M
             gameSettings.zoomIn = zoomIn;
             gameSettings.zoomOut = zoomOut;
           }
-  */
-  window.multiplier = 1;
-      window.zoomLevel = 5;
-      window.onwheel = (p640) => {
-        if (p640.deltaY > 0) {
-          window.multiplier *= 0.8;
-        } else {
-          window.multiplier /= 0.8;
-        }
-        window.changedNf();
-      };
-      function f105() {
-        window.zoomLevel++;
-        window.multiplier *= 0.8;
-        changedNf();
-        f107();
-      }
-      function f106() {
-        if (window.zoomLevel > 0) {
-          window.zoomLevel--;
-          window.multiplier /= 0.8;
-          changedNf();
-          f107();
-        }
-      }
-      function f107() {
-        var v729 = Math.round((window.multiplier / 0.625) * 100);
-        v729 = Math.min(100, v729);
-        var v730 = document.getElementById("zoom-percentage");
-        v730.textContent = v729 + "%";
-      }
-      document.getElementById("zoom-in").addEventListener("touchstart", f105, {
-        passive: false,
-      });
-      document.getElementById("zoom-out").addEventListener("touchstart", f106, {
-        passive: false,
-      });
-      window.onwheel = function (p641) {
-        p641.preventDefault();
-        if (p641.deltaY < 0) {
-          f105();
-        } else {
-          f106();
-        }
-      };
           if (gameSettings.mobile) {
             $("#config_mobile").html(validateParameter.mb);
             var pixiWrapModes = document.getElementById("joystick_checked");
